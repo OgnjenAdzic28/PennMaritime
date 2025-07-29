@@ -10,18 +10,27 @@ interface SmoothScrollProps {
 
 const SmoothScroll: React.FC<SmoothScrollProps> = ({ children }) => {
 	useEffect(() => {
-		// Initialize Lenis
+		// Detect if we're on a mobile device
+		const isMobile =
+			/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+				navigator.userAgent,
+			);
+
+		// Initialize Lenis with mobile-optimized settings
 		const lenis = new Lenis({
 			duration: 1.2,
 			easing: (t) => Math.min(1, 1.001 - 2 ** (-10 * t)),
 			orientation: "vertical",
 			gestureOrientation: "vertical",
-			smoothWheel: true,
+			smoothWheel: !isMobile, // Disable smooth wheel on mobile for better performance
 			wheelMultiplier: 1,
-			syncTouch: false,
-			touchMultiplier: 2,
+			syncTouch: isMobile, // Enable touch sync on mobile devices
+			touchMultiplier: isMobile ? 1.5 : 2, // Adjust touch sensitivity for mobile
 			infinite: false,
 		});
+
+		// Make Lenis instance globally accessible for navbar smooth scrolling
+		window.lenis = lenis;
 
 		// Animation frame function
 		function raf(time: number) {
@@ -34,6 +43,8 @@ const SmoothScroll: React.FC<SmoothScrollProps> = ({ children }) => {
 		// Cleanup
 		return () => {
 			lenis.destroy();
+			// Clean up global reference
+			delete window.lenis;
 		};
 	}, []);
 

@@ -22,7 +22,7 @@ const navLinks: NavLink[] = [
 	{ href: "/contact", label: "Contact Us" },
 ];
 
-// Custom hook for smooth scrolling
+// Custom hook for smooth scrolling that works with Lenis
 const useSmoothScroll = () => {
 	const handleSmoothScroll = (href: string) => {
 		// Check if it's a hash link to a section on the same page
@@ -31,10 +31,28 @@ const useSmoothScroll = () => {
 			const targetElement = document.getElementById(targetId);
 
 			if (targetElement) {
-				targetElement.scrollIntoView({
-					behavior: "smooth",
-					block: "start",
-				});
+				// Get the element's position relative to the document
+				const elementTop =
+					targetElement.getBoundingClientRect().top + window.scrollY;
+
+				// Account for the fixed navbar height (approximately 120px including margins)
+				const offset = 120;
+				const targetPosition = elementTop - offset;
+
+				// Use Lenis for smooth scrolling if available, fallback to native
+				const lenis = window.lenis;
+				if (lenis && typeof lenis.scrollTo === "function") {
+					lenis.scrollTo(targetPosition, {
+						duration: 1.2,
+						easing: (t: number) => Math.min(1, 1.001 - 2 ** (-10 * t)),
+					});
+				} else {
+					// Fallback to native scrolling with better iOS support
+					window.scrollTo({
+						top: targetPosition,
+						behavior: "smooth",
+					});
+				}
 				return true; // Indicate that we handled the scroll
 			}
 		}
