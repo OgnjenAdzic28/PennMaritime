@@ -218,17 +218,23 @@ const Navbar: React.FC = () => {
 		const handleScroll = () => {
 			const scrollY = window.scrollY;
 
-			// Update navbar visibility based on scroll direction
-			if (scrollY > lastScrollY.current) {
-				// Scrolling down
-				setIsScrollingDown(true);
-			} else if (scrollY < lastScrollY.current) {
-				// Scrolling up
+			// Always show navbar when at the very top (handles iOS bounce effect)
+			if (scrollY <= 10) {
 				setIsScrollingDown(false);
-			}
+				lastScrollY.current = scrollY;
+			} else {
+				// Update navbar visibility based on scroll direction (only when not at top)
+				if (scrollY > lastScrollY.current) {
+					// Scrolling down
+					setIsScrollingDown(true);
+				} else if (scrollY < lastScrollY.current) {
+					// Scrolling up
+					setIsScrollingDown(false);
+				}
 
-			// Update last scroll position
-			lastScrollY.current = scrollY;
+				// Update last scroll position
+				lastScrollY.current = scrollY;
+			}
 
 			const sections = ["about", "committees", "president", "opportunities"];
 			const windowHeight = window.innerHeight;
@@ -642,7 +648,7 @@ const Navbar: React.FC = () => {
 
 	return (
 		<motion.nav
-			className="w-full max-w-[90%] backdrop-blur-md rounded-full lg:max-w-[990px] mx-auto **:select-none"
+			className="w-full max-w-[90%] backdrop-blur-md rounded-3xl lg:rounded-full lg:max-w-[990px] mx-auto **:select-none"
 			initial={{
 				opacity: 0,
 				filter: "blur(8px)",

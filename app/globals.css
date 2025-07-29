@@ -138,16 +138,27 @@
 /* Animated film grain effect */
 .film-grain::after {
 	content: "";
-	background-image: url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
+	background-image: url("/Dissolve_noise.jpg");
 	height: 300%;
 	width: 300%;
 	position: absolute;
 	top: 0;
 	left: 0;
-	opacity: 0.3;
+	opacity: 0;
 	pointer-events: none;
 	z-index: 1;
-	animation: animateGrain 8s steps(10) infinite;
+	animation:
+		filmGrainFadeIn 0.5s ease-out 0.2s forwards,
+		animateGrain 8s steps(10) infinite 0.7s;
+}
+
+@keyframes filmGrainFadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 0.3;
+	}
 }
 
 @keyframes animateGrain {
