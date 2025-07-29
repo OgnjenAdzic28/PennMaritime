@@ -1,5 +1,5 @@
 {
-	"installCommand": "bun install",
+	"installCommand": "git lfs checkout && bun install",
 	"buildCommand": "bun run build",
 	"devCommand": "bun run dev",
 	"framework": "nextjs"
