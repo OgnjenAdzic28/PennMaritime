@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
 		rules: {
 			userAgent: "*",
 			allow: "/",
-			disallow: ["/private/", "/admin/"],
+			disallow: ["/keystatic/"],
 		},
 		sitemap: "https://pennmaritime.club/sitemap.xml",
 		host: "https://pennmaritime.club",
