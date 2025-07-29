@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import type React from "react";
 import {
@@ -86,7 +85,6 @@ const EventsSection: React.FC = async () => {
 						alt="Megaphone representing events and announcements"
 						className="object-cover"
 						containerClassName="absolute -top-24 hidden 2xl:block -right-24 size-[550px] pointer-events-none md:z-0 -z-10 md:opacity-100 opacity-10 [&]:[@media(min-width:1749px)]:-top-16 [&]:[@media(min-width:1749px)]:right-8"
-						priority={false}
 					/>
 
 					{/* Header */}
@@ -138,15 +136,12 @@ const EventsSection: React.FC = async () => {
 									</div>
 								) : (
 									event.featuredImage && (
-										<div className="relative aspect-video overflow-hidden rounded-lg bg-muted mb-4">
-											<Image
-												src={event.featuredImage}
-												alt={event.title}
-												fill
-												className="object-cover transition-transform duration-300 group-hover:scale-105"
-												sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
-											/>
-										</div>
+										<div
+											className="relative aspect-video overflow-hidden rounded-lg bg-muted mb-4 bg-cover bg-center bg-no-repeat transition-transform duration-300 group-hover:scale-105"
+											style={{
+												backgroundImage: `url(${event.featuredImage})`,
+											}}
+										/>
 									)
 								)}
 

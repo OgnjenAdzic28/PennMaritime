@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type React from "react";
-import { MobileOptimizedVideo } from "@/components/MobileOptimizedVideo";
+import { MobileOptimizedImage } from "@/components/MobileOptimizedImage";
 import { Button } from "@/components/ui/button";
 
 const CommitteesSection: React.FC = () => {
@@ -105,16 +105,12 @@ const CommitteesSection: React.FC = () => {
 							</div>
 						</div>
 
-						{/* Unchained Video - Absolute positioned, large screens only (Only load on non-mobile devices) */}
-						<MobileOptimizedVideo
-							src="https://res.cloudinary.com/dhj0xjooz/video/upload/v1753726469/unchained_tcbhhx.webm"
-							type="video/webm"
+						{/* Unchained Image - Absolute positioned, large screens only (Only load on non-mobile devices) */}
+						<MobileOptimizedImage
+							src="https://res.cloudinary.com/dhj0xjooz/image/upload/v1753822121/Unchained_1-1920x917_fhbzfy.png"
+							alt="Unchained maritime design element"
 							className="w-full h-full object-cover"
-							containerClassName="hidden xl:block absolute top-0 -right-64 w-1/2 h-full pointer-events-none"
-							autoPlay={true}
-							loop={true}
-							muted={true}
-							playsInline={true}
+							containerClassName="hidden xl:block absolute top-0 aspect-[850/863] -right-64 w-[850px] h-full 2xl:z-0 -z-10 pointer-events-none"
 						/>
 
 						{/* CTA Section */}

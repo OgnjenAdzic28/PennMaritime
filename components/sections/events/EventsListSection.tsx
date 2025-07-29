@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import type React from "react";
 import { HiOutlineBuildingOffice, HiOutlineUser } from "react-icons/hi2";
@@ -71,15 +70,12 @@ const EventsListSection: React.FC = async () => {
 							>
 								{/* Event Image */}
 								{event.featuredImage && (
-									<div className="relative aspect-video overflow-hidden rounded-lg bg-muted mb-4">
-										<Image
-											src={event.featuredImage}
-											alt={event.title}
-											fill
-											className="object-cover transition-transform duration-300 group-hover:scale-105"
-											sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-										/>
-
+									<div
+										className="relative aspect-video overflow-hidden rounded-lg bg-muted mb-4 bg-cover bg-center bg-no-repeat transition-transform duration-300 group-hover:scale-105"
+										style={{
+											backgroundImage: `url(${event.featuredImage})`,
+										}}
+									>
 										{/* Status Badge */}
 										<div className="absolute top-3 left-3">
 											<span

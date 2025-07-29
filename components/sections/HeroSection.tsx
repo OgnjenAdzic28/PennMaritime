@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import type React from "react";
 import { Button } from "@/components/ui/button";
@@ -53,12 +52,11 @@ const HeroSection: React.FC = () => {
 			<div className="relative flex-1 rounded-2xl sm:rounded-3xl overflow-hidden film-grain">
 				{/* Background Image */}
 				<div className="absolute inset-0 z-0">
-					<Image
-						src="/hero-bg.png"
-						alt="Maritime background"
-						fill
-						className="object-cover object-top-right lg:object-top"
-						priority
+					<div
+						className="w-full h-full bg-cover bg-top-right lg:bg-bottom-right bg-no-repeat"
+						style={{
+							backgroundImage: `url('/hero-bg.png')`,
+						}}
 					/>
 				</div>
 

@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import type React from "react";
 import {
@@ -25,15 +24,12 @@ const EventHeroSection: React.FC<EventHeroSectionProps> = ({ event }) => {
 			<div className="relative flex-1 rounded-2xl sm:rounded-3xl overflow-hidden">
 				{/* Background Image */}
 				{event.featuredImage && (
-					<div className="absolute inset-0 z-0">
-						<Image
-							src={event.featuredImage}
-							alt={event.title}
-							fill
-							className="object-cover"
-							priority
-						/>
-					</div>
+					<div
+						className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
+						style={{
+							backgroundImage: `url(${event.featuredImage})`,
+						}}
+					/>
 				)}
 
 				{/* Overlay */}

@@ -3,7 +3,6 @@ import { Geist_Mono, Raleway } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import SmoothScroll from "@/components/SmoothScroll";
 import StructuredData from "@/components/StructuredData";
 import { ThemeProvider } from "@/components/theme-provider";
 
@@ -135,7 +134,7 @@ export default function RootLayout({
 					enableSystem={false}
 					disableTransitionOnChange
 				>
-					<SmoothScroll>{children}</SmoothScroll>
+					{children}
 				</ThemeProvider>
 				<Analytics />
 				<SpeedInsights />

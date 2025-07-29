@@ -1,7 +1,7 @@
 import Image from "next/image";
 import type React from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { MobileOptimizedVideo } from "@/components/MobileOptimizedVideo";
+import { MobileOptimizedImage } from "@/components/MobileOptimizedImage";
 
 const PresidentSection: React.FC = () => {
 	return (
@@ -33,16 +33,12 @@ const PresidentSection: React.FC = () => {
 							</span>
 						</div>
 
-						{/* Crown Video - Top Right (Only load on non-mobile devices) */}
-						<MobileOptimizedVideo
-							src="https://res.cloudinary.com/dhj0xjooz/video/upload/v1753728073/dark-king-crown_dsifye.webm"
-							type="video/webm"
+						{/* Crown Image - Top Right (Only load on non-mobile devices) */}
+						<MobileOptimizedImage
+							src="https://res.cloudinary.com/dhj0xjooz/image/upload/v1753822126/DARK_KING_CROWN_1-1920x917_k2lefw.png"
+							alt="Dark King Crown maritime design element"
 							className="w-full h-full object-cover"
 							containerClassName="absolute -top-64 -right-24 size-[600px] pointer-events-none md:z-0 -z-10 opacity-100 md:block hidden [&]:[@media(min-width:1749px)]:-top-16 [&]:[@media(min-width:1749px)]:left-8 [&]:[@media(min-width:1749px)]:right-auto"
-							autoPlay={true}
-							loop={true}
-							muted={true}
-							playsInline={true}
 						/>
 
 						{/* Two Column Layout: Content + Photo */}
