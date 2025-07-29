@@ -68,10 +68,7 @@ export default async function EventPage({ params }: EventPageProps) {
 
 	return (
 		<div className="min-h-screen">
-			{/* Fixed Navbar */}
-			<div className="fixed top-12 left-0 right-0 z-40">
-				<Navbar />
-			</div>
+			<Navbar />
 
 			{/* Event Hero Section */}
 			<EventHeroSection event={event} />

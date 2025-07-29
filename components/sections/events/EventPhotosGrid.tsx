@@ -92,17 +92,12 @@ const EventPhotosGrid: React.FC<EventPhotosGridProps> = ({
 						whileHover={{ scale: 1.02 }}
 						whileTap={{ scale: 0.98 }}
 						transition={{ duration: 0.2 }}
-						className="group relative aspect-video overflow-hidden rounded-lg bg-muted cursor-pointer"
+						className="group relative aspect-video overflow-hidden rounded-lg bg-muted cursor-pointer bg-cover bg-center bg-no-repeat"
 						onClick={() => openLightbox(index)}
+						style={{
+							backgroundImage: `url(${image})`,
+						}}
 					>
-						<Image
-							src={image}
-							alt={`${eventTitle} - Photo ${index + 1}`}
-							fill
-							className="object-cover transition-transform duration-300 group-hover:scale-110"
-							sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-						/>
-
 						{/* Overlay on hover */}
 						<div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
 							<div className="text-white text-sm font-medium bg-black/30 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">

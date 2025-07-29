@@ -57,10 +57,7 @@ export const metadata: Metadata = {
 export default function Home() {
 	return (
 		<div className="min-h-screen">
-			{/* Fixed Navbar */}
-			<div className="fixed top-12 left-0 right-0 z-40">
-				<Navbar />
-			</div>
+			<Navbar />
 
 			<HeroSection />
 			<AboutSection />

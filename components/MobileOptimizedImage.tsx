@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import type React from "react";
 import { useIsMobileDevice } from "@/hooks/useIsMobileDevice";
 
@@ -9,10 +8,6 @@ interface MobileOptimizedImageProps {
 	alt: string;
 	className?: string;
 	containerClassName?: string;
-	priority?: boolean;
-	fill?: boolean;
-	width?: number;
-	height?: number;
 }
 
 /**
@@ -24,10 +19,6 @@ export const MobileOptimizedImage: React.FC<MobileOptimizedImageProps> = ({
 	alt,
 	className = "",
 	containerClassName = "",
-	priority = false,
-	fill = true,
-	width,
-	height,
 }) => {
 	const isMobileDevice = useIsMobileDevice();
 
@@ -38,17 +29,14 @@ export const MobileOptimizedImage: React.FC<MobileOptimizedImageProps> = ({
 
 	return (
 		<div className={containerClassName}>
-			<div className="relative w-full h-full">
-				<Image
-					src={src}
-					alt={alt}
-					fill={fill}
-					width={!fill ? width : undefined}
-					height={!fill ? height : undefined}
-					className={className}
-					priority={priority}
-				/>
-			</div>
+			<div
+				className={`relative w-full h-full bg-cover bg-center bg-no-repeat ${className}`}
+				style={{
+					backgroundImage: `url(${src})`,
+				}}
+				role="img"
+				aria-label={alt}
+			/>
 		</div>
 	);
 };
