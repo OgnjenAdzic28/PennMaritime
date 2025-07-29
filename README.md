@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Maritime@Penn
 
-## Getting Started
+**Building Tomorrow's Maritime Leaders**
 
-First, run the development server:
+Maritime@Penn (MAP) is the first maritime club at the University of Pennsylvania, uniting students from diverse academic backgrounds to tackle real maritime challenges and develop the next generation of industry leaders.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## About Maritime@Penn
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The maritime industry moves 80% of global trade and represents a $14 trillion sector that faces critical challenges in sustainability, digitalization, and workforce development. Maritime@Penn believes that students can drive the innovation needed to transform this vital industry.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+As a premier maritime student organization in Philadelphia, we leverage the University of Pennsylvania's interdisciplinary expertise and entrepreneurial spirit to address complex maritime challenges. Our members draw from resources across engineering, business, law, and healthcare to create actionable solutions for the industry's future.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Our Mission
 
-## Learn More
+We are committed to:
 
-To learn more about Next.js, take a look at the following resources:
+- **Innovation & Technology**: Developing cutting-edge solutions for maritime sustainability and digitalization
+- **Education & Leadership**: Building the next generation of maritime professionals and thought leaders
+- **Industry Collaboration**: Connecting students with maritime professionals, companies, and organizations
+- **Research & Development**: Advancing maritime knowledge through interdisciplinary research initiatives
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Our Committees
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Maritime@Penn operates through specialized committees that connect ideas to action:
 
-## Deploy on Vercel
+1. **Maritime Innovation, Technology & Entrepreneurship**
+2. **Maritime Law, Policy & Governance**
+3. **Maritime Finance & Investment**
+4. **Maritime Sustainability & Environment**
+5. **Maritime Operations & Logistics**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Philadelphia's Maritime Legacy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Located in Philadelphia, a city with a rich maritime heritage dating back to its founding, Maritime@Penn is uniquely positioned to contribute to the region's continued maritime innovation. Philadelphia's strategic location and historical significance in American maritime commerce provide an ideal backdrop for our mission.
+
+## Get Involved
+
+Maritime@Penn welcomes students from all academic disciplines who share a passion for maritime innovation and leadership. Whether you're interested in technology, business, law, environmental science, or any other field, there's a place for you in our maritime community.
+
+---
+
+**Website**: [pennmaritime.club](https://pennmaritime.club)
+
+_This repository contains the official website for Maritime@Penn, showcasing our organization, events, committees, and opportunities for students to engage with the maritime industry._
