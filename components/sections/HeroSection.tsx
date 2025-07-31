@@ -91,7 +91,7 @@ const HeroSection: React.FC = () => {
 							<Button
 								variant="outline"
 								size="lg"
-								className="text-lg min-w-[200px] h-12 border-white text-white hover:bg-white hover:text-primary"
+								className="text-lg min-w-[200px] h-12 hover:text-primary bg-foreground/5 hover:bg-foreground/10"
 								onClick={handleExploreCommittees}
 							>
 								Explore committees

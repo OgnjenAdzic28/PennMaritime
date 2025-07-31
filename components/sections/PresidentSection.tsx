@@ -38,7 +38,7 @@ const PresidentSection: React.FC = () => {
 							src="https://res.cloudinary.com/dhj0xjooz/image/upload/v1753822126/DARK_KING_CROWN_1-1920x917_k2lefw.png"
 							alt="Dark King Crown maritime design element"
 							className="w-full h-full object-cover"
-							containerClassName="absolute -top-64 -right-24 size-[600px] pointer-events-none md:z-0 -z-10 opacity-100 md:block hidden [&]:[@media(min-width:1749px)]:-top-16 [&]:[@media(min-width:1749px)]:left-8 [&]:[@media(min-width:1749px)]:right-auto"
+							containerClassName="absolute -top-56 -right-24 size-[600px] pointer-events-none -z-10 lg:z-10 opacity-50 lg:opacity-100 md:block hidden [&]:[@media(min-width:1749px)]:-top-16 [&]:[@media(min-width:1749px)]:left-8 [&]:[@media(min-width:1749px)]:right-auto"
 						/>
 
 						{/* Two Column Layout: Content + Photo */}

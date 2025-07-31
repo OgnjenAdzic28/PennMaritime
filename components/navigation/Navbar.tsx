@@ -718,7 +718,7 @@ const Navbar: React.FC = () => {
 					>
 						{/* Animated backdrop for left nav */}
 						<motion.div
-							className="absolute bg-foreground/5 dark:border-t rounded-full pointer-events-none z-0"
+							className="absolute bg-foreground/5 border-t rounded-full pointer-events-none z-0"
 							style={{
 								left: leftBackdropStyle.left,
 								width: leftBackdropStyle.width,
@@ -815,7 +815,7 @@ const Navbar: React.FC = () => {
 					>
 						{/* Animated backdrop for right nav */}
 						<motion.div
-							className="absolute bg-foreground/5 dark:border-t rounded-full pointer-events-none z-0"
+							className="absolute bg-foreground/5 border-t rounded-full pointer-events-none z-0"
 							style={{
 								left: rightBackdropStyle.left,
 								width: rightBackdropStyle.width,

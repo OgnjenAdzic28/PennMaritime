@@ -84,7 +84,7 @@ const EventsSection: React.FC = async () => {
 						src="https://res.cloudinary.com/dhj0xjooz/image/upload/f_auto,q_auto:best,w_auto,c_scale,fl_lossy/v1753726290/Megaphone_icons_1-1920x917_pwui7z.png"
 						alt="Megaphone representing events and announcements"
 						className="object-cover"
-						containerClassName="absolute -top-24 hidden 2xl:block -right-24 size-[550px] pointer-events-none md:z-0 -z-10 md:opacity-100 opacity-10 [&]:[@media(min-width:1749px)]:-top-16 [&]:[@media(min-width:1749px)]:right-8"
+						containerClassName="absolute xl:-top-24 2xl:opacity-100 xl:opacity-50 hidden xl:block -right-32 2xl:-right-8 xl:size-[600px] pointer-events-none -z-10 md:opacity-100 opacity-10"
 					/>
 
 					{/* Header */}

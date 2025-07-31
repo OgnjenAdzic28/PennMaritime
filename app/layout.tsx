@@ -4,7 +4,6 @@ import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import StructuredData from "@/components/StructuredData";
-import { ThemeProvider } from "@/components/theme-provider";
 
 const raleway = Raleway({
 	variable: "--font-raleway",
@@ -128,14 +127,7 @@ export default function RootLayout({
 				className={`${raleway.variable} ${geistMono.variable} antialiased bg-background`}
 			>
 				<StructuredData />
-				<ThemeProvider
-					attribute="class"
-					defaultTheme="dark"
-					enableSystem={false}
-					disableTransitionOnChange
-				>
-					{children}
-				</ThemeProvider>
+				{children}
 				<Analytics />
 				<SpeedInsights />
 			</body>
