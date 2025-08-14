@@ -42,3 +42,4 @@ Maritime@Penn welcomes students from all academic disciplines who share a passio
 **Website**: [pennmaritime.club](https://pennmaritime.club)
 
 _This repository contains the official website for Maritime@Penn, showcasing our organization, events, committees, and opportunities for students to engage with the maritime industry._
+ 
