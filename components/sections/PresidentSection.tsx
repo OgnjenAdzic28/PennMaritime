@@ -1,7 +1,6 @@
 import Image from "next/image";
 import type React from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { MobileOptimizedImage } from "@/components/MobileOptimizedImage";
 
 const PresidentSection: React.FC = () => {
 	return (
@@ -32,14 +31,6 @@ const PresidentSection: React.FC = () => {
 								Words from the President
 							</span>
 						</div>
-
-						{/* Crown Image - Top Right (Only load on non-mobile devices) */}
-						<MobileOptimizedImage
-							src="https://res.cloudinary.com/dhj0xjooz/image/upload/v1753822126/DARK_KING_CROWN_1-1920x917_k2lefw.png"
-							alt="Dark King Crown maritime design element"
-							className="w-full h-full object-cover"
-							containerClassName="absolute -top-56 -right-24 size-[600px] pointer-events-none -z-10 lg:z-10 opacity-50 lg:opacity-100 md:block hidden [&]:[@media(min-width:1749px)]:-top-16 [&]:[@media(min-width:1749px)]:left-8 [&]:[@media(min-width:1749px)]:right-auto"
-						/>
 
 						{/* Two Column Layout: Content + Photo */}
 						<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">

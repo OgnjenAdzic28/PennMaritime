@@ -5,15 +5,16 @@ import { Button } from "@/components/ui/button";
 
 export function PartnersClientWrapper() {
 	return (
-		<div className="mt-16 pt-8 border-t border-border text-center">
-			<div className="max-w-2xl mx-auto">
-				<p className="text-lg text-muted-foreground leading-relaxed mb-8">
+		<div className="mt-16 pt-8 border-t border-border text-center w-full">
+			<div className="w-full">
+				<p className="text-lg text-muted-foreground leading-relaxed mb-8 w-full">
 					<span className="font-medium text-foreground">
-						Ready to shape the future of maritime innovation?
+						Partner with Maritime@Penn to shape the future of maritime
+						innovation and cultivate the next generation of industry leaders.
 					</span>{" "}
-					Partner with us to support cutting-edge research, world-class events,
-					and transformative educational experiences. Investment opportunities
-					and tax-deductible donations available.
+					Support cutting-edge research, world-class events, and transformative
+					educational experiences. Investment opportunities and tax-deductible
+					donations available.
 				</p>
 				<div className="flex flex-col sm:flex-row gap-4 justify-center">
 					<Button size="lg" className="text-lg min-w-[180px] h-12" asChild>
