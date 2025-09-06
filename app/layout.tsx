@@ -24,6 +24,10 @@ export const metadata: Metadata = {
 	keywords: [
 		"Maritime@Penn",
 		"MAP",
+		"Maritime at Penn",
+		"University of Pennsylvania maritime club",
+		"UPenn maritime club",
+		"Penn maritime club",
 		"University of Pennsylvania maritime",
 		"Penn maritime club",
 		"Philadelphia maritime",

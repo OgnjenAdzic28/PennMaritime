@@ -52,8 +52,13 @@ const CommitteesSection: React.FC = () => {
 									<span className="text-2xl font-light text-primary/60 min-w-[3rem]">
 										01
 									</span>
-									<h3 className="text-xl font-medium text-foreground">
-										Maritime Innovation, Technology & Entrepreneurship
+									<h3 className="text-xl font-medium text-foreground flex items-center gap-3 flex-wrap">
+										<span className="inline-flex items-center px-3 py-1 rounded-md bg-primary/10 text-primary font-mono text-sm font-bold tracking-wide border border-primary/20">
+											MARTECH
+										</span>
+										<span>
+											Maritime Innovation, Technology & Entrepreneurship
+										</span>
 									</h3>
 								</div>
 
@@ -61,8 +66,11 @@ const CommitteesSection: React.FC = () => {
 									<span className="text-2xl font-light text-primary/60 min-w-[3rem]">
 										02
 									</span>
-									<h3 className="text-xl font-medium text-foreground">
-										Maritime Law, Policy & Governance
+									<h3 className="text-xl font-medium text-foreground flex items-center gap-3 flex-wrap">
+										<span className="inline-flex items-center px-3 py-1 rounded-md bg-primary/10 text-primary font-mono text-sm font-bold tracking-wide border border-primary/20">
+											MARLAW
+										</span>
+										<span>Maritime Law, Policy & Governance</span>
 									</h3>
 								</div>
 
@@ -70,8 +78,11 @@ const CommitteesSection: React.FC = () => {
 									<span className="text-2xl font-light text-primary/60 min-w-[3rem]">
 										03
 									</span>
-									<h3 className="text-xl font-medium text-foreground">
-										Naval Architecture, Marine Engineering & Design
+									<h3 className="text-xl font-medium text-foreground flex items-center gap-3 flex-wrap">
+										<span className="inline-flex items-center px-3 py-1 rounded-md bg-primary/10 text-primary font-mono text-sm font-bold tracking-wide border border-primary/20">
+											NAVMAR
+										</span>
+										<span>Naval Architecture, Marine Engineering & Design</span>
 									</h3>
 								</div>
 
@@ -79,8 +90,11 @@ const CommitteesSection: React.FC = () => {
 									<span className="text-2xl font-light text-primary/60 min-w-[3rem]">
 										04
 									</span>
-									<h3 className="text-xl font-medium text-foreground">
-										Health, Safety & Well-Being
+									<h3 className="text-xl font-medium text-foreground flex items-center gap-3 flex-wrap">
+										<span className="inline-flex items-center px-3 py-1 rounded-md bg-primary/10 text-primary font-mono text-sm font-bold tracking-wide border border-primary/20">
+											SAFEMAR
+										</span>
+										<span>Health, Safety & Well-Being</span>
 									</h3>
 								</div>
 
@@ -88,9 +102,14 @@ const CommitteesSection: React.FC = () => {
 									<span className="text-2xl font-light text-primary/60 min-w-[3rem]">
 										05
 									</span>
-									<h3 className="text-xl font-medium text-foreground">
-										Environmental Sustainability, Ocean Conservation & Marine
-										Science
+									<h3 className="text-xl font-medium text-foreground flex items-center gap-3 flex-wrap">
+										<span className="inline-flex items-center px-3 py-1 rounded-md bg-primary/10 text-primary font-mono text-sm font-bold tracking-wide border border-primary/20">
+											ECOSEA
+										</span>
+										<span>
+											Environmental Sustainability, Ocean Conservation & Marine
+											Science
+										</span>
 									</h3>
 								</div>
 
@@ -98,8 +117,11 @@ const CommitteesSection: React.FC = () => {
 									<span className="text-2xl font-light text-primary/60 min-w-[3rem]">
 										06
 									</span>
-									<h3 className="text-xl font-medium text-foreground">
-										Maritime Finance, Economics & Insurance
+									<h3 className="text-xl font-medium text-foreground flex items-center gap-3 flex-wrap">
+										<span className="inline-flex items-center px-3 py-1 rounded-md bg-primary/10 text-primary font-mono text-sm font-bold tracking-wide border border-primary/20">
+											MARFIN
+										</span>
+										<span>Maritime Finance, Economics & Insurance</span>
 									</h3>
 								</div>
 							</div>
