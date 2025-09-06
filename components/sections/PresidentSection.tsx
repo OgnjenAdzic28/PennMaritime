@@ -1,7 +1,6 @@
 import Image from "next/image";
 import type React from "react";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { MobileOptimizedImage } from "@/components/MobileOptimizedImage";
 
 const PresidentSection: React.FC = () => {
 	return (
@@ -33,14 +32,6 @@ const PresidentSection: React.FC = () => {
 							</span>
 						</div>
 
-						{/* Crown Image - Top Right (Only load on non-mobile devices) */}
-						<MobileOptimizedImage
-							src="https://res.cloudinary.com/dhj0xjooz/image/upload/v1753822126/DARK_KING_CROWN_1-1920x917_k2lefw.png"
-							alt="Dark King Crown maritime design element"
-							className="w-full h-full object-cover"
-							containerClassName="absolute -top-56 -right-24 size-[600px] pointer-events-none -z-10 lg:z-10 opacity-50 lg:opacity-100 md:block hidden [&]:[@media(min-width:1749px)]:-top-16 [&]:[@media(min-width:1749px)]:left-8 [&]:[@media(min-width:1749px)]:right-auto"
-						/>
-
 						{/* Two Column Layout: Content + Photo */}
 						<div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 							{/* Left Column: Content */}
@@ -60,11 +51,11 @@ const PresidentSection: React.FC = () => {
 								<div className="space-y-6">
 									<p className="text-lg text-muted-foreground leading-relaxed">
 										<span className="font-medium text-foreground">
-											"Maritime@Penn represents more than just a student
+											&ldquo;Maritime@Penn represents more than just a student
 											organization
 										</span>{" "}
-										— it's a movement to bridge the gap between academic
-										excellence and real-world maritime challenges."
+										— it&apos;s a movement to bridge the gap between academic
+										excellence and real-world maritime challenges.&rdquo;
 									</p>
 
 									<p className="text-base text-muted-foreground leading-relaxed">
@@ -75,9 +66,9 @@ const PresidentSection: React.FC = () => {
 									</p>
 
 									<p className="text-base text-muted-foreground leading-relaxed">
-										Through our committees, partnerships, and initiatives, we're
-										not just studying the maritime industry — we're actively
-										shaping its future.
+										Through our committees, partnerships, and initiatives,
+										we&apos;re not just studying the maritime industry —
+										we&apos;re actively shaping its future.
 									</p>
 								</div>
 

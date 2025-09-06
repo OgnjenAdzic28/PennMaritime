@@ -78,9 +78,9 @@ const PartnersSection: React.FC = () => {
 								</div>
 								<p className="text-base text-muted-foreground leading-relaxed">
 									Connect with exceptional students from diverse disciplines at
-									one of the world's leading universities. Our members bring
-									fresh perspectives, innovative thinking, and deep passion for
-									solving complex maritime challenges.
+									one of the world&apos;s leading universities. Our members
+									bring fresh perspectives, innovative thinking, and deep
+									passion for solving complex maritime challenges.
 								</p>
 							</div>
 
@@ -98,7 +98,7 @@ const PartnersSection: React.FC = () => {
 									Collaborate on groundbreaking research and development
 									projects spanning sustainable technologies, digital
 									transformation, autonomous systems, and innovative business
-									models that will define the maritime industry's future.
+									models that will define the maritime industry&apos;s future.
 								</p>
 							</div>
 						</div>

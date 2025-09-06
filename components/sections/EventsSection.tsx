@@ -116,7 +116,7 @@ const EventsSection: React.FC = async () => {
 
 					{/* Events Grid */}
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
-						{eventsWithCTA.map((event, _index) => (
+						{eventsWithCTA.map((event) => (
 							<Link
 								key={event.slug || event.id}
 								href={
@@ -200,7 +200,7 @@ const EventsSection: React.FC = async () => {
 						<div className="max-w-2xl mx-auto">
 							<p className="text-lg text-muted-foreground leading-relaxed mb-8">
 								<span className="font-medium text-foreground">
-									Don't miss out on these exclusive opportunities.
+									Don&apos;t miss out on these exclusive opportunities.
 								</span>{" "}
 								Join our events to network with industry leaders and gain
 								insights that will shape your maritime career.

@@ -72,7 +72,9 @@ const HeroSection: React.FC = () => {
 					<div>
 						<h1 className="text-4xl sm:text-5xl lg:text-6xl font-light text-white mb-8 leading-tight tracking-wide drop-shadow-lg">
 							<span className="italic text-slate-200">Building</span>{" "}
-							<span className="font-medium text-slate-100">Tomorrow's</span>{" "}
+							<span className="font-medium text-slate-100">
+								Tomorrow&apos;s
+							</span>{" "}
 							<span className="font-semibold text-white">Maritime</span>{" "}
 							<span className="text-slate-100">Leaders</span>
 						</h1>

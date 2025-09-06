@@ -42,7 +42,7 @@ export default function StructuredData() {
 		<Script
 			id="organization-structured-data"
 			type="application/ld+json"
-			strategy="beforeInteractive"
+			strategy="afterInteractive"
 		>
 			{JSON.stringify(organizationData)}
 		</Script>

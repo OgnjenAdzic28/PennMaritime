@@ -7,7 +7,8 @@ export function OpportunitiesClientWrapper() {
 			<div className="max-w-2xl mx-auto">
 				<p className="text-lg text-muted-foreground leading-relaxed mb-8">
 					<span className="font-medium text-foreground">
-						We don't just offer opportunities—we empower you to create them.
+						We don&apos;t just offer opportunities—we empower you to create
+						them.
 					</span>{" "}
 					Join a community where ambitious students transform innovative ideas
 					into real-world impact across the global maritime industry.
