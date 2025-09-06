@@ -56,7 +56,9 @@ const CommitteesSection: React.FC = () => {
 										<span className="inline-flex items-center px-3 py-1 rounded-md bg-primary/10 text-primary font-mono text-sm font-bold tracking-wide border border-primary/20">
 											MARTECH
 										</span>
-										<span>Maritime Innovation, Technology & Entrepreneurship</span>
+										<span>
+											Maritime Innovation, Technology & Entrepreneurship
+										</span>
 									</h3>
 								</div>
 
@@ -104,7 +106,10 @@ const CommitteesSection: React.FC = () => {
 										<span className="inline-flex items-center px-3 py-1 rounded-md bg-primary/10 text-primary font-mono text-sm font-bold tracking-wide border border-primary/20">
 											ECOSEA
 										</span>
-										<span>Environmental Sustainability, Ocean Conservation & Marine Science</span>
+										<span>
+											Environmental Sustainability, Ocean Conservation & Marine
+											Science
+										</span>
 									</h3>
 								</div>
 
