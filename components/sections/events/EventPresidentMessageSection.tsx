@@ -166,7 +166,7 @@ const EventPresidentMessageSection: React.FC<
 					{/* Signature Quote Mark */}
 					<div className="text-center mt-8">
 						<div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 border border-primary/20">
-							<span className="text-2xl text-primary">"</span>
+							<span className="text-2xl text-primary">&ldquo;</span>
 						</div>
 					</div>
 				</div>

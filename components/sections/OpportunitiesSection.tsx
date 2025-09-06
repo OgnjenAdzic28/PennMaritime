@@ -51,7 +51,7 @@ const OpportunitiesSection: React.FC = () => {
 								Expand your horizons
 							</span>{" "}
 							<span className="text-muted-foreground">
-								through transformative experiences that shape tomorrow's
+								through transformative experiences that shape tomorrow&apos;s
 								maritime leaders.
 							</span>
 						</h2>

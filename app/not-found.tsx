@@ -40,7 +40,7 @@ const NotFound: React.FC = () => {
 
 						{/* Description */}
 						<p className="text-lg text-slate-200 mb-12 max-w-2xl mx-auto">
-							Let's navigate you back to safe waters.
+							Let&apos;s navigate you back to safe waters.
 						</p>
 
 						{/* CTA Button */}

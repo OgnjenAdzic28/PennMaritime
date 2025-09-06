@@ -98,10 +98,10 @@ const AboutSection: React.FC = () => {
 									</h3>
 								</div>
 								<p className="text-base text-muted-foreground leading-relaxed">
-									Philadelphia was North America's largest port by 1750 and
-									established the Maritime Exchange in 1875. Today's Delaware
-									River ports continue this legacy. We aim to reignite
-									Philadelphia's role as a global maritime innovation hub.
+									Philadelphia was North America&apos;s largest port by 1750 and
+									established the Maritime Exchange in 1875. Today&apos;s
+									Delaware River ports continue this legacy. We aim to reignite
+									Philadelphia&apos;s role as a global maritime innovation hub.
 								</p>
 							</div>
 						</div>

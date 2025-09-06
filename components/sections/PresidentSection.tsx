@@ -51,11 +51,11 @@ const PresidentSection: React.FC = () => {
 								<div className="space-y-6">
 									<p className="text-lg text-muted-foreground leading-relaxed">
 										<span className="font-medium text-foreground">
-											"Maritime@Penn represents more than just a student
+											&ldquo;Maritime@Penn represents more than just a student
 											organization
 										</span>{" "}
-										— it's a movement to bridge the gap between academic
-										excellence and real-world maritime challenges."
+										— it&apos;s a movement to bridge the gap between academic
+										excellence and real-world maritime challenges.&rdquo;
 									</p>
 
 									<p className="text-base text-muted-foreground leading-relaxed">
@@ -66,9 +66,9 @@ const PresidentSection: React.FC = () => {
 									</p>
 
 									<p className="text-base text-muted-foreground leading-relaxed">
-										Through our committees, partnerships, and initiatives, we're
-										not just studying the maritime industry — we're actively
-										shaping its future.
+										Through our committees, partnerships, and initiatives,
+										we&apos;re not just studying the maritime industry —
+										we&apos;re actively shaping its future.
 									</p>
 								</div>
 

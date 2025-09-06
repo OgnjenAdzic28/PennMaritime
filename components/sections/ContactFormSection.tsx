@@ -52,7 +52,7 @@ const ContactFormSection: React.FC = () => {
 							</span>{" "}
 							<span className="font-medium text-primary">maritime future</span>{" "}
 							<span className="text-muted-foreground">
-								with us? Let's set up a time to chat.
+								with us? Let&apos;s set up a time to chat.
 							</span>
 						</h2>
 
@@ -71,9 +71,9 @@ const ContactFormSection: React.FC = () => {
 							<div className="max-w-2xl mx-auto">
 								<p className="text-sm text-muted-foreground leading-relaxed">
 									<span className="font-medium text-foreground">Note:</span>{" "}
-									This is a 30-minute introductory call where we'll discuss your
-									interests, answer any questions you may have, and explore how
-									you can get involved with Maritime@Penn.
+									This is a 30-minute introductory call where we&apos;ll discuss
+									your interests, answer any questions you may have, and explore
+									how you can get involved with Maritime@Penn.
 								</p>
 							</div>
 						</div>
