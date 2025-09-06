@@ -34,7 +34,7 @@ const AboutSection: React.FC = () => {
 						</div>
 
 						{/* Main Headline */}
-						<h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-foreground mb-12 leading-tight max-w-4xl">
+						<h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-foreground mb-12 leading-tight w-full">
 							<span className="font-medium text-primary">Maritime@Penn</span>{" "}
 							<span className="text-muted-foreground">
 								(MAP) is the first maritime club at
