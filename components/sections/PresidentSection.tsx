@@ -85,6 +85,7 @@ const PresidentSection: React.FC = () => {
 													target="_blank"
 													rel="noopener noreferrer"
 													className="text-muted-foreground hover:text-primary transition-colors"
+													aria-label="Visit Luka Adzic's LinkedIn profile"
 												>
 													<FaLinkedinIn className="w-4 h-4" />
 												</a>
@@ -93,6 +94,7 @@ const PresidentSection: React.FC = () => {
 													target="_blank"
 													rel="noopener noreferrer"
 													className="text-muted-foreground hover:text-primary transition-colors"
+													aria-label="Visit Luka Adzic's GitHub profile"
 												>
 													<FaGithub className="w-4 h-4" />
 												</a>
