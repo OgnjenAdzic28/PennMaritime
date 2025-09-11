@@ -60,7 +60,7 @@ const ContactFormSection: React.FC = () => {
 						<div className="max-w-4xl mx-auto">
 							<Cal
 								namespace="introcall"
-								calLink="pennmaritime/introcall"
+								calLink="lukaadzic/maritime-penn-intro-call/"
 								style={{ width: "100%", height: "600px", overflow: "scroll" }}
 								config={{ layout: "month_view", theme: "auto" }}
 							/>
@@ -71,7 +71,7 @@ const ContactFormSection: React.FC = () => {
 							<div className="max-w-2xl mx-auto">
 								<p className="text-sm text-muted-foreground leading-relaxed">
 									<span className="font-medium text-foreground">Note:</span>{" "}
-									This is a 30-minute introductory call where we&apos;ll discuss
+									This is a 15-minute introductory call where we&apos;ll discuss
 									your interests, answer any questions you may have, and explore
 									how you can get involved with Maritime@Penn.
 								</p>

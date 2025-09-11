@@ -24,17 +24,17 @@ const CommitteesSection: React.FC = () => {
 				</div>
 
 				{/* Content */}
-				<div className="relative z-10 flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 max-w-[98%] lg:max-w-[1600px] xl:max-w-[1800px] mx-auto py-20 min-h-[calc(100vh-2rem)] sm:min-h-[calc(100vh-3rem)] lg:min-h-[calc(100vh-4rem)]">
+				<div className="relative z-10 flex-1 flex items-center justify-center px-4 sm:px-6 lg:px-8 max-w-[98%] lg:max-w-[1600px] xl:max-w-[1800px] mx-auto py-12 sm:py-16 lg:py-20 min-h-[calc(100vh-2rem)] sm:min-h-[calc(100vh-3rem)] lg:min-h-[calc(100vh-4rem)]">
 					<div className="text-left w-full">
 						{/* Tagline */}
-						<div className="mb-6">
+						<div className="mb-4 sm:mb-6">
 							<span className="text-sm font-medium text-muted-foreground uppercase tracking-wider">
 								Committees
 							</span>
 						</div>
 
 						{/* Main Headline */}
-						<h2 className="text-3xl sm:text-4xl lg:text-5xl font-light text-foreground mb-12 leading-tight max-w-4xl">
+						<h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light text-foreground mb-8 sm:mb-10 lg:mb-12 leading-tight max-w-4xl">
 							<span className="text-muted-foreground">
 								Our committees are the
 							</span>{" "}
@@ -47,82 +47,90 @@ const CommitteesSection: React.FC = () => {
 
 						{/* Committees List */}
 						<div className="max-w-4xl">
-							<div className="space-y-8">
-								<div className="flex items-center gap-6">
-									<span className="text-2xl font-light text-primary/60 min-w-[3rem]">
+							<div className="space-y-6 sm:space-y-8">
+								<div className="flex flex-col sm:flex-row gap-3 sm:gap-6">
+									<span className="text-2xl font-light text-primary/60 min-w-[3rem] flex-shrink-0 leading-none">
 										01
 									</span>
-									<h3 className="text-xl font-medium text-foreground flex items-center gap-3 flex-wrap">
-										<span className="inline-flex items-center px-3 py-1 rounded-md bg-primary/10 text-primary font-mono text-sm font-bold tracking-wide border border-primary/20">
+									<div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 flex-1">
+										<span className="inline-flex items-center justify-center px-3 py-1 rounded-md bg-primary/10 text-primary font-mono text-sm font-bold tracking-wide border border-primary/20 whitespace-nowrap flex-shrink-0 w-[85px]">
 											MARTECH
 										</span>
-										<span>
+										<span className="text-lg sm:text-xl font-medium text-foreground leading-tight flex-1">
 											Maritime Innovation, Technology & Entrepreneurship
 										</span>
-									</h3>
+									</div>
 								</div>
 
-								<div className="flex items-center gap-6">
-									<span className="text-2xl font-light text-primary/60 min-w-[3rem]">
+								<div className="flex flex-col sm:flex-row gap-3 sm:gap-6">
+									<span className="text-2xl font-light text-primary/60 min-w-[3rem] flex-shrink-0 leading-none">
 										02
 									</span>
-									<h3 className="text-xl font-medium text-foreground flex items-center gap-3 flex-wrap">
-										<span className="inline-flex items-center px-3 py-1 rounded-md bg-primary/10 text-primary font-mono text-sm font-bold tracking-wide border border-primary/20">
+									<div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 flex-1">
+										<span className="inline-flex items-center justify-center px-3 py-1 rounded-md bg-primary/10 text-primary font-mono text-sm font-bold tracking-wide border border-primary/20 whitespace-nowrap flex-shrink-0 w-[85px]">
 											MARLAW
 										</span>
-										<span>Maritime Law, Policy & Governance</span>
-									</h3>
+										<span className="text-lg sm:text-xl font-medium text-foreground leading-tight flex-1">
+											Maritime Law, Policy & Governance
+										</span>
+									</div>
 								</div>
 
-								<div className="flex items-center gap-6">
-									<span className="text-2xl font-light text-primary/60 min-w-[3rem]">
+								<div className="flex flex-col sm:flex-row gap-3 sm:gap-6">
+									<span className="text-2xl font-light text-primary/60 min-w-[3rem] flex-shrink-0 leading-none">
 										03
 									</span>
-									<h3 className="text-xl font-medium text-foreground flex items-center gap-3 flex-wrap">
-										<span className="inline-flex items-center px-3 py-1 rounded-md bg-primary/10 text-primary font-mono text-sm font-bold tracking-wide border border-primary/20">
+									<div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 flex-1">
+										<span className="inline-flex items-center justify-center px-3 py-1 rounded-md bg-primary/10 text-primary font-mono text-sm font-bold tracking-wide border border-primary/20 whitespace-nowrap flex-shrink-0 w-[85px]">
 											NAVMAR
 										</span>
-										<span>Naval Architecture, Marine Engineering & Design</span>
-									</h3>
+										<span className="text-lg sm:text-xl font-medium text-foreground leading-tight flex-1">
+											Naval Architecture, Marine Engineering & Design
+										</span>
+									</div>
 								</div>
 
-								<div className="flex items-center gap-6">
-									<span className="text-2xl font-light text-primary/60 min-w-[3rem]">
+								<div className="flex flex-col sm:flex-row gap-3 sm:gap-6">
+									<span className="text-2xl font-light text-primary/60 min-w-[3rem] flex-shrink-0 leading-none">
 										04
 									</span>
-									<h3 className="text-xl font-medium text-foreground flex items-center gap-3 flex-wrap">
-										<span className="inline-flex items-center px-3 py-1 rounded-md bg-primary/10 text-primary font-mono text-sm font-bold tracking-wide border border-primary/20">
+									<div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 flex-1">
+										<span className="inline-flex items-center justify-center px-3 py-1 rounded-md bg-primary/10 text-primary font-mono text-sm font-bold tracking-wide border border-primary/20 whitespace-nowrap flex-shrink-0 w-[85px]">
 											SAFEMAR
 										</span>
-										<span>Health, Safety & Well-Being</span>
-									</h3>
+										<span className="text-lg sm:text-xl font-medium text-foreground leading-tight flex-1">
+											Health, Safety & Well-Being
+										</span>
+									</div>
 								</div>
 
-								<div className="flex items-center gap-6">
-									<span className="text-2xl font-light text-primary/60 min-w-[3rem]">
+								<div className="flex flex-col sm:flex-row gap-3 sm:gap-6">
+									<span className="text-2xl font-light text-primary/60 min-w-[3rem] flex-shrink-0 leading-none">
 										05
 									</span>
-									<h3 className="text-xl font-medium text-foreground flex items-center gap-3 flex-wrap">
-										<span className="inline-flex items-center px-3 py-1 rounded-md bg-primary/10 text-primary font-mono text-sm font-bold tracking-wide border border-primary/20">
+									<div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 flex-1">
+										<span className="inline-flex items-center justify-center px-3 py-1 rounded-md bg-primary/10 text-primary font-mono text-sm font-bold tracking-wide border border-primary/20 whitespace-nowrap flex-shrink-0 w-[85px]">
 											ECOSEA
 										</span>
-										<span>
+										<span className="text-lg sm:text-xl font-medium text-foreground leading-tight flex-1">
 											Environmental Sustainability, Ocean Conservation & Marine
 											Science
 										</span>
-									</h3>
+									</div>
 								</div>
 
-								<div className="flex items-center gap-6">
-									<span className="text-2xl font-light text-primary/60 min-w-[3rem]">
+								<div className="flex flex-col sm:flex-row gap-3 sm:gap-6">
+									<span className="text-2xl font-light text-primary/60 min-w-[3rem] flex-shrink-0 leading-none">
 										06
 									</span>
-									<h3 className="text-xl font-medium text-foreground flex items-center gap-3 flex-wrap">
-										<span className="inline-flex items-center px-3 py-1 rounded-md bg-primary/10 text-primary font-mono text-sm font-bold tracking-wide border border-primary/20">
+									<div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 flex-1">
+										<span className="inline-flex items-center justify-center px-3 py-1 rounded-md bg-primary/10 text-primary font-mono text-sm font-bold tracking-wide border border-primary/20 whitespace-nowrap flex-shrink-0 w-[85px]">
 											MARFIN
 										</span>
-										<span>Maritime Finance, Economics & Insurance</span>
-									</h3>
+										<span className="text-lg sm:text-xl font-medium text-foreground leading-tight flex-1">
+											Maritime Finance, Economics & Insurance
+										</span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -136,9 +144,9 @@ const CommitteesSection: React.FC = () => {
 						/>
 
 						{/* CTA Section */}
-						<div className="mt-16 pt-8 border-t border-border text-center">
+						<div className="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-border text-center">
 							<div className="max-w-2xl mx-auto">
-								<p className="text-lg text-muted-foreground leading-relaxed mb-8">
+								<p className="text-base sm:text-lg text-muted-foreground leading-relaxed mb-6 sm:mb-8 px-2">
 									<span className="font-medium text-foreground">
 										Ready to make an impact?
 									</span>{" "}
@@ -148,7 +156,7 @@ const CommitteesSection: React.FC = () => {
 								</p>
 								<Button
 									size="lg"
-									className="text-lg min-w-[200px] h-12"
+									className="text-base sm:text-lg min-w-[180px] sm:min-w-[200px] h-11 sm:h-12 w-full sm:w-auto"
 									asChild
 								>
 									<Link
